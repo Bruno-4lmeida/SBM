@@ -6,7 +6,6 @@
 #install.packages(c("tidyverse", "rsample", "randomForest", "caret"))
 
 #### Chamar os pacotes necessários
-getwd()
 library(randomForest)
 library(tidyverse)
 library(rsample)
@@ -192,3 +191,4 @@ ggplot(data = matriz_df, aes(x = Previsão, y = Realidade, fill = Frequência)) 
   ) +
   theme_minimal(base_size = 16) +
   theme(plot.title = element_text(hjust = 0.5)) # Centraliza o título
+
