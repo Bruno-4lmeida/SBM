@@ -3,7 +3,7 @@
 
 
 # Instale os pacotes se ainda não os tiver (rode no console apenas uma vez)
-# install.packages(c("tidyverse", "factoextra", "corrplot"))
+install.packages(c("tidyverse", "factoextra", "corrplot"))
 
 library(tidyverse)    # Para manipulação de dados (dplyr) e gráficos (ggplot2)
 library(factoextra)   # Para visualizações de PCA e clustering

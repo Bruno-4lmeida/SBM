@@ -3,13 +3,13 @@
 
 # O 'tidyverse' é para manipulação geral de dados.
 # O 'rsample' é parte do ecossistema 'tidymodels' e é excelente para divisões de dados.
-#install.packages(c("tidyverse", "rsample", "randomForest, caret"))
+#install.packages(c("tidyverse", "rsample", "randomForest", "caret"))
 
 #### Chamar os pacotes necessários
-
+getwd()
 library(randomForest)
 library(tidyverse)
-library(rsample
+library(rsample)
 library(caret)
 
 ### ler o arquivo .csv do data set completo
@@ -121,7 +121,7 @@ print(tabela_importancia)
 
 ### PASSO 7: Gerando o Gráfico de Importância das Variáveis ####
 
-grafico_importancia <- ggplot(tabela_importancia,
+grafico_importancia = ggplot(tabela_importancia,
                               aes(x = reorder(variavel, importancia), y = importancia)) +
   geom_bar(stat = "identity", fill = "#008080") + 
   geom_text(aes(label = round(importancia, 2)), hjust = -0.2, size = 4) + 
